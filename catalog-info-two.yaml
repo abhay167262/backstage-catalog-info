@@ -1,0 +1,14 @@
+apiVersion: backstage.io/v1alpha1
+kind: Component
+metadata:
+  name: example-service
+  description: A service deployed on Kubernetes.
+  annotations:
+    # This should match the "name" field of the cluster defined in app-config.yaml.
+    backstage.io/kubernetes-id: docker-desktop
+    # This label selector is used to locate Kubernetes resources (like Deployments or Pods)
+    # that belong to this service.
+    backstage.io/kubernetes-label-selector: "app=nginx-hello-world-8fbb569f7-5pc2r"
+spec:
+  type: service
+  owner: backstage-sa3
