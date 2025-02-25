@@ -11,4 +11,5 @@ metadata:
     backstage.io/kubernetes-label-selector: "app=nginx-hello-world-8fbb569f7-5pc2r"
 spec:
   type: service
-  owner: backstage-sa3
+  lifecycle: production
+  owner: user:backstage-sa3
