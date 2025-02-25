@@ -12,4 +12,4 @@ metadata:
 spec:
   type: service
   lifecycle: local
-  owner: user:backstage-sa3
+  owner: user:guest
