@@ -8,8 +8,8 @@ metadata:
     backstage.io/kubernetes-id: docker-desktop
     # This label selector is used to locate Kubernetes resources (like Deployments or Pods)
     # that belong to this service.
-    backstage.io/kubernetes-label-selector: "app=nginx-hello-world-8fbb569f7-5pc2r"
+    backstage.io/kubernetes-label-selector: "app=nginx-hello-world"
 spec:
   type: service
-  lifecycle: production
+  lifecycle: local
   owner: user:backstage-sa3
